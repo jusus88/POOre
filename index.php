@@ -1,17 +1,16 @@
 <?php 
 
-	echo "Empleando Objetos";
-	include "base.php";
-	include "hijo.php";
-	echo "<br/>";
-	
-	
-	
-	$obj1=new hijo("jesus","centeno","tecnico","inge");
-	$obj1->mostrar();
-	echo "<br/>";
-	clase::$nombres="centeno araujo";
-	clase::mostrar();
+/*include "calculadora.php";
 
+	calculadora::$numero=4;
+	calculadora::$divisor=4;
+	calculadora::residuo();
+*/
+	include "transporte.php";
+	include "auto.php";
+	$obj=new auto("toryta","sdfsdf",4,12,4);
+	$obj->enceder();
+	$obj->apagar();
+	
 
  ?>
